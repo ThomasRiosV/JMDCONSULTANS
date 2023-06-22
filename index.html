@@ -20,6 +20,10 @@
 
 
     <script src="https://kit.fontawesome.com/b4b361cebe.js" crossorigin="anonymous"></script>
+
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 </head>
 
 <style>
@@ -94,7 +98,11 @@
 
     }
 
-
+    a:hover {
+        color: white;
+        transform: scale(1.1);
+        transition: ease-in 0.5s;
+    }
 
     form {
         background-color: rgba(255, 255, 255, 0.86);
@@ -149,19 +157,8 @@
 
     }
 
-    .slider a {
-        background-color: var(--Color1);
-        text-align: center;
-        color: white;
-        text-decoration: none;
-        font-weight: 900;
-        font-size: 15px;
-        padding: 10px 35px;
-
-    }
-
-    .slider img{
-        max-height:  300px;
+    .slider img {
+        max-height: 300px;
     }
 
     .priv-arrow,
@@ -223,7 +220,7 @@
         font-weight: 400;
     }
 
-    .part4 a {
+    .button-a {
         background-color: var(--Color1);
         text-align: center;
         color: white;
@@ -232,6 +229,11 @@
         font-size: 15px;
         padding: 10px 35px;
         box-shadow: 0px 17px 31px -5px rgba(0, 0, 0, 0.9);
+    }
+    .button-a:hover {
+        color: white;
+        transform: scale(1.1);
+        transition: ease-in 0.5s;
     }
 
     .vline {
@@ -354,7 +356,7 @@
     .black i {
         margin: auto;
         padding: auto;
-       
+
     }
 
     .line_white {
@@ -373,25 +375,25 @@
 
 <body>
     <header>
-        <section class="container">
-            <nav class="navbar row justify-content-between align-items-center pt-3">
-                <a class="col-sm-6" href="#"><img src="img/logo-jmd-roofing.png" class="d-inline-block align-top" alt=""
+        <section class="container" >
+            <nav class="navbar row justify-content-between align-items-center pt-3" >
+                <a data-aos="fade-down" class="col-sm-6" href="#"><img src="img/logo-jmd-roofing.png" class="d-inline-block align-top" alt=""
                         height="66px "></a>
-                <a name="" id="" class="button_color1 row justify-content-center align-items-center" href="#"
+                <a data-aos="fade-down" name="" id="" class="button_color1 row justify-content-center align-items-center" href="#"
                     role="button">
                     <i class="bi bi-telephone-fill col-sm-2 m-0 p-0"></i>
                     <p class="col mb-2 p-0">+1 3225 1586 632</p>
                 </a>
             </nav>
             <div class="row justify-content-between align-items-center g-2">
-                <div class="col-sm-6 text-white">
+                <div class="col-sm-6 text-white" data-aos="fade-down">
                     <h1>Especialistas en roofing</h1>
                     <h3>Inspeccion 100% gratuita</h3>
                     <h5>Te ayudamos a <strong>recuperar el dinero</strong> que necesitas de tu <strong>compañia de
                             seguros</strong></h5>
                 </div>
                 <div class="col-sm-6 p-4">
-                    <form action=""
+                    <form  data-aos="fade-down" action=""
                         class="mx-5 pt-3 pb-4 px-4 row justify-content-center align-items-center text-center">
                         <div class="form-group mt-4 mb-2  d-inline-block">
                             <label for="">
@@ -424,10 +426,10 @@
             </div>
         </section>
     </header>
-    <main class="container my-5">
-        <div class="slider mt-5 px-5">
-            <div class="container my-5">
-                <div class="slider_items row justify-content-center">
+    <main class="container my-5" >
+        <div class="slider mt-5 px-5"data-aos="fade-down" >
+            <div class="container my-5"  >
+                <div class="slider_items row justify-content-center" >
                     <div class="col-sm-6 d-flex justify-content-center p-0"><img src="img/hombre-roofing.jpg" alt=""
                             class="img-fluid border-0"></div>
                     <div class="col-sm-6">
@@ -435,12 +437,12 @@
                                 ti</strong></h2>
                         <p>Te ayudamos para obtener el dinero justo por su reclamo a su seguro, con una representaciona
                             la altura y brindando un servicio integral, de forma profesional de principio a fin</p>
-                        <a href="">Te ayudamos!!</a>
+                        <a href="" class="button-a">Te ayudamos!!</a>
                     </div>
                 </div>
             </div>
 
-            <div class="container mt-5">
+            <div class="container mt-5 mb-5" >
                 <div class="slider_items row justify-content-between">
                     <div class="col-sm-6 d-flex justify-content-center p-0"><img src="img/hombre-roofing.jpg" alt=""
                             class="img-fluid border-0"></div>
@@ -449,33 +451,33 @@
                                 ti</strong></h2>
                         <p>Te ayudamos para obtener el dinero justo por su reclamo a su seguro, con una representaciona
                             la altura y brindando un servicio integral, de forma profesional de principio a fin</p>
-                        <a href="">Te ayudamos!!</a>
+                        <a href="" class="button-a">Te ayudamos!!</a>
                     </div>
                 </div>
 
             </div>
         </div>
-        <section class="container">
+        <section class="container mb-5" data-aos="fade-down">
             <div class="row justify-content-center px-5">
-                <div class="col-sm-4 cont text-center px-5">
+                <div class="col-sm-4 cont text-center px-5 mb-5">
                     <img src="img/icon1-roofing.jpg" class="img-fluid" width="130px" alt="">
                     <p class="text-center">Garantía y seguridad de nuestro servicio</p>
                     <div class="line m-auto"></div>
                 </div>
-                <div class="col-sm-4 cont text-center px-5">
+                <div class="col-sm-4 cont text-center px-5 mb-5">
                     <img src="img/icon-2-roofing-jmd.jpg" class="img-fluid" width="130px" alt="">
                     <p class="text-center">Personal capacitado y profesional en la meteria</p>
                     <div class="line m-auto"></div>
                 </div>
-                <div class="col-sm-4 cont text-center px-5">
-                    <img src="img/icon-3-roofing-jmd.jpg" class="img-fluid" width="130px" alt="">
+                <div class="col-sm-4 cont text-center px-5 mb-5">
+                    <img  src="img/icon-3-roofing-jmd.jpg" class="img-fluid" width="130px" alt="">
                     <p class="text-center">Soluciones integrales a cualquier tipo de problemas</p>
                     <div class="line  m-auto"></div>
                 </div>
             </div>
         </section>
     </main>
-    <section class="container-fluid p-0 m-0 part4">
+    <section class="container-fluid p-0 m-0 part4 pt-3 mt-0" data-aos="fade-down">
         <div class="row justify-content-center align-items-top g-2 p-0 m-0">
             <div class="col-sm-6 p-0 m-0"><img src="img/001.jpg" class="img-fluid"></div>
             <div class="col-sm-6 px-5 m-0">
@@ -486,19 +488,19 @@
                         rentables que están
                         garantizadas para
                         durar años</p>
-                    <a href="" class="my-3">Empecemos!!!</a>
+                    <a href="" class="my-3 button-a">Empecemos!!!</a>
                 </div>
             </div>
         </div>
     </section>
-    <section class="container my-5 Reclamo">
+    <section class="container my-5 Reclamo" data-aos="fade-down">
         <div class="row justify-content-center align-items-center g-2">
             <div class="col-sm-12 text-center">
                 <h1>Te ayudamos con tu <strong>reclamo</strong></h1>
                 <p>Realizamos todo el proceso administrativo con tu seguro</p>
             </div>
         </div>
-        <div class="row justify-content-center align-items-center g-2">
+        <div class="row justify-content-center align-items-center g-2" >
             <div class="col-sm-6 d-flex justify-content-center"><img src="img/hombre.jpg" class="img-fluid" alt="">
             </div>
             <div class="col-sm-6">
@@ -531,7 +533,7 @@
             </div>
         </div>
     </section>
-    <section class="contactanos py-5">
+    <section class="contactanos py-5" data-aos="fade-down">
         <div class="container">
             <div class="row justify-content-center align-items-center g-2">
                 <div class="col-sm-6">
@@ -546,7 +548,7 @@
 
     </section>
 
-    <section class="clientes">
+    <section class="clientes" data-aos="fade-down">
         <div class="container">
             <div class="slider mt-5 px-5">
 
@@ -583,8 +585,8 @@
         </div>
     </section>
 
-    <footer>
-        <section class="container relative">
+    <footer >
+        <section class="container relative" >
             <div class="row justify-content-center align-items-center g-2">
                 <div class="col">
                     <div class="row justify-content-center text-center mt-3">
@@ -634,7 +636,7 @@
                             <div class="line_white"></div>
                         </div>
                         <div class="row justify-content-center my-2 ">
-                            <p class="w-200">L - V  9:00 a 18:00</p>
+                            <p class="w-200">L - V 9:00 a 18:00</p>
                         </div>
                     </div>
 
@@ -644,12 +646,15 @@
         </section>
         <section class="container-fluid p-0 m-0">
             <div class="row justify-content-center align-items-center g-2 text-center p-0 m-0">
-                <div class="col-sm-6" style="background-color: #0071b9;font-size: 40px;"><i class="fa-brands fa-square-facebook"></i></div>
-                <div class="col-sm-6" style="background-color: #90278c;font-size: 40px;"><i class="fa-brands fa-instagram"></i></div>
+                <div class="col-sm-6" style="background-color: #0071b9;font-size: 40px;"><i
+                        class="fa-brands fa-square-facebook"></i></div>
+                <div class="col-sm-6" style="background-color: #90278c;font-size: 40px;"><i
+                        class="fa-brands fa-instagram"></i></div>
             </div>
-            <div class="row justify-content-center align-items-center text-center p-0 m-0" style="background-color: white;color: #969696;">
-                <div class="col-sm-6 p-0 m-0" >Todos los derechos reservador por JMD CONSULTANTS</div>
-                <div class="col-sm-6 p-0 m-0" >Desarrollo web realizado por cracknear.com</div>
+            <div class="row justify-content-center align-items-center text-center p-0 m-0"
+                style="background-color: white;color: #969696;">
+                <div class="col-sm-6 p-0 m-0">Todos los derechos reservador por JMD CONSULTANTS</div>
+                <div class="col-sm-6 p-0 m-0">Desarrollo web realizado por cracknear.com</div>
             </div>
 
         </section>
@@ -665,7 +670,10 @@
 </body>
 
 </html>
-
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+  </script>
 <script>
     $(document).ready(function () {
         $('.slider').slick({
@@ -674,3 +682,5 @@
         });
     });
 </script>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
