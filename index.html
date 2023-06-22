@@ -1,0 +1,671 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>JMD</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+    <!-- Bootstrap ICONS v5.2.1 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+
+
+    <script src="https://kit.fontawesome.com/b4b361cebe.js" crossorigin="anonymous"></script>
+</head>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,500;0,700;0,900;1,600;1,700&display=swap');
+
+    * {
+        font-family: 'Raleway', sans-serif;
+    }
+
+    footer {
+        background-color: #00b7a1;
+        color: #efefef;
+    }
+
+    :root {
+        --Color1: #00b7a1;
+    }
+
+    header {
+        background-image: url('img/header_background.png');
+        background-size: cover;
+    }
+
+    .button_color1 {
+        background-color: var(--Color1);
+
+
+        text-align: center;
+        border-radius: 10px;
+        color: white;
+        text-decoration: none;
+        font-weight: 900;
+        max-width: 222.743px;
+        max-height: 54.4488px;
+        min-height: 54.4488px;
+        font-size: 18px;
+        box-shadow: 0px 0px 28px 0px rgb(0, 183, 161);
+    }
+
+    .button_color2 {
+        background-color: var(--Color1);
+
+        text-align: center;
+        color: white;
+        text-decoration: none;
+        font-weight: 900;
+        font-size: 18px;
+        box-shadow: 0px 0px 28px 0px rgb(0, 183, 161);
+        padding: 8px 0px;
+    }
+
+    .button_color1 i {
+
+        font-size: 21px;
+    }
+
+    h1 {
+        font-size: 5rem;
+        font-weight: 900;
+
+    }
+
+    h3 {
+        font-size: 2.75rem;
+        font-weight: 900;
+        background-color: var(--Color1);
+        text-align: center;
+    }
+
+    h5 {
+        font-size: 1.25rem;
+
+    }
+
+
+
+    form {
+        background-color: rgba(255, 255, 255, 0.86);
+        border-top-left-radius: 100px;
+    }
+
+    .form-group h3 {
+        font-size: 2rem;
+        font-weight: 900;
+        padding: 0;
+        margin: 0;
+        background-color: transparent;
+
+    }
+
+    .form-group h5 {
+        font-size: 1.5rem;
+        font-weight: 900;
+        padding: 0;
+        margin: 0;
+        background-color: transparent;
+        color: var(--Color1);
+
+    }
+
+    .form-group input {
+        border: none;
+        min-width: 165px;
+        min-height: 35px;
+    }
+
+    .form-group input::placeholder {
+        color: black;
+        font-weight: 600;
+        font-size: 0.80rem;
+    }
+
+    .slider h2 {
+        font-size: 2.2rem;
+    }
+
+    .slider h2 strong {
+        color: #00b7a1;
+    }
+
+    .slider p {
+        max-width: 400px;
+        font-size: 0.90rem;
+        margin-top: 30px;
+        margin-bottom: 30px;
+
+    }
+
+    .slider a {
+        background-color: var(--Color1);
+        text-align: center;
+        color: white;
+        text-decoration: none;
+        font-weight: 900;
+        font-size: 15px;
+        padding: 10px 35px;
+
+    }
+
+    .priv-arrow,
+    .priv-next {
+        color: #00b7a1;
+        border-radius: 100%;
+        width: 60px;
+        height: 60px;
+        background-color: transparent;
+        box-shadow: 0px 17px 31px -5px rgba(0, 0, 0, 0.9);
+        border: none;
+        font-size: 40px;
+    }
+
+    .priv-arrow {
+        position: absolute;
+        z-index: 100;
+        top: 40%;
+        left: 0%;
+
+    }
+
+    .priv-next {
+        position: absolute;
+        z-index: 100;
+        top: 40%;
+        left: 93%;
+    }
+
+    .line {
+        width: 50px;
+        height: 5px;
+        background-color: #00b7a1;
+        text-align: center;
+    }
+
+    .part4 h3 {
+        font-size: 3rem;
+        text-align: left;
+        background-color: transparent;
+        font-weight: 700;
+    }
+
+    .part4 h5 {
+        font-size: 2rem;
+        text-align: left;
+        background-color: transparent;
+        font-weight: 700;
+    }
+
+    .part4 h3 strong,
+    .part4 i {
+        color: #00b7a1;
+    }
+
+    .part4 p {
+        max-width: 400px;
+        font-size: 1.35rem;
+        font-weight: 400;
+    }
+
+    .part4 a {
+        background-color: var(--Color1);
+        text-align: center;
+        color: white;
+        text-decoration: none;
+        font-weight: 500;
+        font-size: 15px;
+        padding: 10px 35px;
+        box-shadow: 0px 17px 31px -5px rgba(0, 0, 0, 0.9);
+    }
+
+    .vline {
+        width: 5px;
+        height: 50px;
+        background-color: #00b7a1;
+        padding: 0;
+    }
+
+    .Reclamo h1 {
+        font-size: 3.0rem;
+    }
+
+    .Reclamo h1 strong {
+        color: #00b7a1;
+    }
+
+    .circle {
+        background-color: #00b7a1;
+        color: white;
+        border-radius: 100%;
+        min-height: 50px;
+        min-width: 50px;
+        max-width: 50px;
+        max-height: 50px;
+    }
+
+    .circle p {
+        padding: 0;
+        margin: auto;
+        font-size: 25px;
+        font-weight: bold;
+    }
+
+    .Reclamo img {
+        max-height: 500px;
+    }
+
+    .contactanos {
+        background-color: #efefef;
+    }
+
+    .contactanos h5 {
+        font-size: 2rem;
+        font-weight: 900;
+    }
+
+    .contactanos p {
+        font-size: 1.2rem;
+    }
+
+    .contactanos a {
+        background-color: var(--Color1);
+        text-align: center;
+        color: white;
+        text-decoration: none;
+        font-weight: 500;
+        font-size: 2rem;
+        padding: 10px 6.5rem;
+        box-shadow: 0px 17px 31px -5px rgba(0, 0, 0, 0.9);
+    }
+
+    .image-container {
+        text-align: center;
+        margin-top: 50px;
+    }
+
+    .image-container img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .clientes img {
+        width: 200px;
+        height: 200px;
+        border-color: #00b7a1;
+        border-radius: 100%;
+        border: #00b7a1 solid 5px;
+        margin: 0;
+    }
+
+    .clientes p {
+        max-width: none;
+    }
+
+    .relative {
+        position: relative;
+    }
+
+    .relative img {
+        position: absolute;
+        top: 15%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 50%;
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    .cuadro {
+        max-width: 800px;
+        margin: auto;
+        border: rgba(0, 0, 0, 0.1) solid 1px;
+        border-radius: 20px;
+        box-shadow: 0px 17px 29px -5px rgba(0, 0, 0, 0.3);
+    }
+
+    .black {
+        background-color: #333333;
+        font-size: 50px;
+        width: 90px;
+        height: 90px;
+        border-top-left-radius: 20px;
+        text-align: center;
+        position: absolute;
+        z-index: 100;
+        top: -30%;
+    }
+
+    .black i {
+        margin: auto;
+        padding: auto;
+       
+    }
+
+    .line_white {
+        padding: 0;
+        background-color: white;
+        width: 100px;
+        height: 1px;
+    }
+
+    .w-200 {
+        width: 200px;
+    }
+</style>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+<body>
+    <header>
+        <section class="container">
+            <nav class="navbar row justify-content-between align-items-center pt-3">
+                <a class="col-sm-6" href="#"><img src="img/logo-jmd-roofing.png" class="d-inline-block align-top" alt=""
+                        height="66px "></a>
+                <a name="" id="" class="button_color1 row justify-content-center align-items-center" href="#"
+                    role="button">
+                    <i class="bi bi-telephone-fill col-sm-2 m-0 p-0"></i>
+                    <p class="col mb-2 p-0">+1 3225 1586 632</p>
+                </a>
+            </nav>
+            <div class="row justify-content-between align-items-center g-2">
+                <div class="col-sm-6 text-white">
+                    <h1>Especialistas en roofing</h1>
+                    <h3>Inspeccion 100% gratuita</h3>
+                    <h5>Te ayudamos a <strong>recuperar el dinero</strong> que necesitas de tu <strong>compañia de
+                            seguros</strong></h5>
+                </div>
+                <div class="col-sm-6 p-4">
+                    <form action=""
+                        class="mx-5 pt-3 pb-4 px-4 row justify-content-center align-items-center text-center">
+                        <div class="form-group mt-4 mb-2  d-inline-block">
+                            <label for="">
+                                <h3>Datos del propietario</h3>
+                            </label>
+                            <label for="">
+                                <h5>Evaluamos tu caso</h5>
+                            </label>
+                        </div>
+                        <div class="form-group mt-3 mb-1 row justify-content-between">
+                            <input type="text" class="col-sm-5 ml-1" placeholder="Nombre y Apellido">
+                            <input type="text" class="col-sm-5 mr-1" placeholder="Número celular">
+                        </div>
+                        <div class="form-group mt-3 mb-1 row">
+                            <input type="text" class="col-sm-12" placeholder="Correo eletrónico">
+                        </div>
+                        <div class="form-group mt-3 mb-1 row">
+                            <input type="text" class="col-sm-12" placeholder="Dirección">
+                        </div>
+                        <div class="form-group mt-3 mb-1 row">
+                            <input type="text" placeholder="¿Qué seguro tienes?">
+                        </div>
+                        <div class="form-group mt-3 row justify-content-center">
+                            <a name="" id="" class="button_color2 row justify-content-center align-items-center"
+                                href="#" role="button">
+                                Enviar datos</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </header>
+    <main class="container my-5">
+        <div class="slider mt-5 px-5">
+            <div class="container my-5">
+                <div class="slider_items row justify-content-center">
+                    <div class="col-sm-6 d-flex justify-content-center p-0"><img src="img/hombre-roofing.jpg" alt=""
+                            class="img-fluid border-0"></div>
+                    <div class="col-sm-6">
+                        <h2 class="text-left">Nuestros adjusters estarán trabajando exclusivamente <strong>para
+                                ti</strong></h2>
+                        <p>Te ayudamos para obtener el dinero justo por su reclamo a su seguro, con una representaciona
+                            la altura y brindando un servicio integral, de forma profesional de principio a fin</p>
+                        <a href="">Te ayudamos!!</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container mt-5">
+                <div class="slider_items row justify-content-between">
+                    <div class="col-sm-6 d-flex justify-content-center p-0"><img src="img/hombre-roofing.jpg" alt=""
+                            class="img-fluid border-0"></div>
+                    <div class="col-sm-6">
+                        <h2 class="text-left">Nuestros adjusters estarán trabajando exclusivamente <strong>para
+                                ti</strong></h2>
+                        <p>Te ayudamos para obtener el dinero justo por su reclamo a su seguro, con una representaciona
+                            la altura y brindando un servicio integral, de forma profesional de principio a fin</p>
+                        <a href="">Te ayudamos!!</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <section class="container">
+            <div class="row px-5">
+                <div class="col cont text-center px-5">
+                    <img src="img/icon1-roofing.jpg" class="img-fluid" alt="">
+                    <p class="text-center">Garantía y seguridad de nuestro servicio</p>
+                    <div class="line m-auto"></div>
+                </div>
+                <div class="col cont text-cente px-5">
+                    <img src="img/icon-2-roofing-jmd.jpg" class="img-fluid" alt="">
+                    <p class="text-center">Personal capacitado y profesional en la meteria</p>
+                    <div class="line m-auto"></div>
+                </div>
+                <div class="col cont text-center px-5">
+                    <img src="img/icon-3-roofing-jmd.jpg" class="img-fluid" alt="">
+                    <p class="text-center">Soluciones integrales a cualquier tipo de problemas</p>
+                    <div class="line  m-auto"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <section class="container-fluid p-0 m-0 part4">
+        <div class="row justify-content-center align-items-top g-2 p-0 m-0">
+            <div class="col-sm-6 p-0 m-0"><img src="img/001.jpg" class="img-fluid"></div>
+            <div class="col-sm-6 px-5 m-0">
+                <div class="px-4">
+                    <h3>Servicios de <strong>roofing</strong></h3>
+                    <H5 class="mt-4"><i class="fa-solid fa-house"></i> Techos residenciales</H5>
+                    <p class="my-0 mb-4" width="300px">Nos especializamos en soluciones de techado personalizado y
+                        rentables que están
+                        garantizadas para
+                        durar años</p>
+                    <a href="" class="my-3">Empecemos!!!</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container my-5 Reclamo">
+        <div class="row justify-content-center align-items-center g-2">
+            <div class="col-sm-12 text-center">
+                <h1>Te ayudamos con tu <strong>reclamo</strong></h1>
+                <p>Realizamos todo el proceso administrativo con tu seguro</p>
+            </div>
+        </div>
+        <div class="row justify-content-center align-items-center g-2">
+            <div class="col-sm-6 d-flex justify-content-center"><img src="img/hombre.jpg" class="img-fluid" alt="">
+            </div>
+            <div class="col-sm-6">
+                <div class="row">
+                    <div class="vline col-sm-1"></div>
+                    <p class="col">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
+                        euismod tincidunt ut laoreet dolore</p>
+                </div>
+                <div class="row align-items-center my-4">
+                    <div class="circle col-sm-1 d-flex justify-content-center align-items-center">
+                        <p>1</p>
+                    </div>
+                    <p class="col m-0">Presentar todos los documentos para presentarlos a la aseguradora</p>
+                </div>
+                <div class="row align-items-center my-4">
+                    <div class="circle col-sm-1 d-flex justify-content-center align-items-center">
+                        <p>2</p>
+                    </div>
+                    <p class="col m-0">Nuestro profesional con licencia en california experto en construcción de techos
+                        se encargará de recuperar el dinero por el daño de tu propiedad (Le envían al seguro todos los
+                        códigos de construcción del techo de la casa de la ciudad y del estado)</p>
+                </div>
+                <div class="row align-items-center my-4">
+                    <div class="circle col-sm-1 d-flex justify-content-center align-items-center">
+                        <p>3</p>
+                    </div>
+                    <p class="col m-0">Como último paso realizamos la modificación de tu techo acompándote hasta el
+                        final del proceso</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contactanos py-5">
+        <div class="container">
+            <div class="row justify-content-center align-items-center g-2">
+                <div class="col-sm-6">
+                    <h5>¿Tiene preguntas adiconales?</h5>
+                    <p>Póngase en contacto con nosotros aquí y estaremos encantados de ayudarte</p>
+                </div>
+                <div class="col-sm-6 text-center">
+                    <a href="">Contáctanos</a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="clientes">
+        <div class="container">
+            <div class="slider mt-5 px-5">
+
+                <div class="container my-5 ">
+                    <div class="row justify-content-center relative  py-5">
+                        <img class="img-fluid p-0"
+                            src="https://upload.wikimedia.org/wikipedia/commons/1/1d/Shakira_for_VOGUE_in_2021_2.png">
+                        <div class="cuadro py-5 row justify-content-center">
+                            <p class="pt-5">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+                                nibh euismod
+                            </p>
+                            <h6><strong>Shakira Peñales</strong></h6>
+                        </div>
+
+
+                    </div>
+                </div>
+
+                <div class="container my-5 ">
+                    <div class="row justify-content-center relative  py-5">
+                        <img class="img-fluid p-0"
+                            src="https://upload.wikimedia.org/wikipedia/commons/1/1d/Shakira_for_VOGUE_in_2021_2.png">
+                        <div class="cuadro py-5 row justify-content-center">
+                            <p class="pt-5">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+                                nibh euismod
+                            </p>
+                            <h6><strong>Shakira Peñales</strong></h6>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <section class="container relative">
+            <div class="row justify-content-center align-items-center g-2">
+                <div class="col">
+                    <div class="row justify-content-center text-center mt-3">
+                        <div class="row black justify-content-center">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <div class="row mt-4 p-0">
+                            <h4>Nuestra oficina</h4>
+                        </div>
+                        <div class="row justify-content-center ">
+                            <div class="line_white"></div>
+                        </div>
+                        <div class="row justify-content-center my-2 ">
+                            <p class="w-200">777 Glades Rd #100
+                                Boca Raon, FL 33434</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col">
+                    <div class="row justify-content-center text-center">
+                        <div class="row black justify-content-center">
+                            <i class="fa-solid fa-envelope"></i>
+
+                        </div>
+                        <div class="row mt-4 p-0">
+                            <h4>Correo electrónico</h4>
+                        </div>
+                        <div class="row justify-content-center ">
+                            <div class="line_white"></div>
+                        </div>
+                        <div class="row justify-content-center my-2 ">
+                            <p class="w-200">info@jmdonsultants.com</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col">
+                    <div class="row justify-content-center text-center">
+                        <div class="row black justify-content-center">
+                            <i class="fa-solid fa-clock"></i>
+                        </div>
+                        <div class="row mt-4 p-0">
+                            <h4>Nuestra oficina</h4>
+                        </div>
+                        <div class="row justify-content-center ">
+                            <div class="line_white"></div>
+                        </div>
+                        <div class="row justify-content-center my-2 ">
+                            <p class="w-200">L - V  9:00 a 18:00</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+        <section class="container-fluid p-0 m-0">
+            <div class="row justify-content-center align-items-center g-2 text-center p-0 m-0">
+                <div class="col-sm-6" style="background-color: #0071b9;font-size: 40px;"><i class="fa-brands fa-square-facebook"></i></div>
+                <div class="col-sm-6" style="background-color: #90278c;font-size: 40px;"><i class="fa-brands fa-instagram"></i></div>
+            </div>
+            <div class="row justify-content-center align-items-center text-center p-0 m-0" style="background-color: white;color: #969696;">
+                <div class="col-sm-6 p-0 m-0" >Todos los derechos reservador por JMD CONSULTANTS</div>
+                <div class="col-sm-6 p-0 m-0" >Desarrollo web realizado por cracknear.com</div>
+            </div>
+
+        </section>
+    </footer>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+        </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+        integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+        </script>
+</body>
+
+</html>
+
+<script>
+    $(document).ready(function () {
+        $('.slider').slick({
+            prevArrow: '<button type="button" class="priv-arrow"><i class="fa-solid fa-angle-left"></i></button>',
+            nextArrow: '<button type="button" class="priv-next"><i class="fa-solid fa-angle-right"></i></button>'
+        });
+    });
+</script>
