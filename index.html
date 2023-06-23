@@ -307,13 +307,18 @@
         color: white;
         text-decoration: none;
         font-weight: 500;
-        font-size: 2rem;
+        font-size: 1.5rem;
         padding: 10px 6.5rem;
         box-shadow: 0px 17px 31px -5px rgb(151 151 151 / 90%);
     }
 
-    .contactanos a:hover{
-        transform: scale(1.1)!important;
+    .contactanos a:hover {
+        transform: scale(1.1);
+        transition: ease-in 0.5s;
+    }
+
+    .hover:hover {
+        transform: scale(1.1);
         transition: ease-in 0.5s;
     }
 
@@ -399,25 +404,25 @@
     <header>
         <section class="container">
             <nav class="navbar row justify-content-between align-items-center pt-3">
-                <a data-aos="fade-down" class="col-sm-6" href="#"><img src="img/logo-jmd-roofing.png"
-                        class="d-inline-block align-top" alt="" height="66px "></a>
+                <a class="col-sm-6" href="#"><img src="img/logo-jmd-roofing.png" class="d-inline-block align-top" alt=""
+                        height="66px "></a>
                 <div class="col-sm-6 px-5 d-flex justify-content-end">
-                    <a data-aos="fade-down" name="" id=""
-                        class="button_color1 row justify-content-center align-items-center" href="#" role="button">
+                    <a name="" id="" class="button_color1 row justify-content-center align-items-center" href="#"
+                        role="button">
                         <i class="bi bi-telephone-fill col-sm-2 m-0 p-0"></i>
                         <p class="col-sm-10 mb-2 p-0">+1 3225 1586 632</p>
                     </a>
                 </div>
             </nav>
             <div class="row justify-content-between align-items-center g-2">
-                <div class="col-sm-6 text-white" data-aos="fade-down">
+                <div class="col-sm-6 text-white">
                     <h1>Especialistas en roofing</h1>
                     <h3>Inspección 100% gratuita</h3>
                     <h5>Te ayudamos a <strong>recuperar el dinero</strong> que necesitas de tu <strong>compañia de
                             seguros</strong></h5>
                 </div>
                 <div class="col-sm-6 p-4">
-                    <form data-aos="fade-down" action=""
+                    <form data-aos="fade-left" action=""
                         class="mx-5 pt-3 pb-4 px-4 row justify-content-center align-items-center text-center">
                         <div class="form-group mt-4 mb-2  d-inline-block">
                             <label for="">
@@ -461,7 +466,9 @@
                                 ti</strong></h2>
                         <p>Te ayudamos para obtener el dinero justo por su reclamo a su seguro, con una representaciona
                             la altura y brindando un servicio integral, de forma profesional de principio a fin</p>
-                        <a href="" class="button-a">Te ayudamos!!</a>
+                        <div class="hover">
+                            <a href="" class="button-a ">Te ayudamos!!</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -512,7 +519,9 @@
                         rentables que están
                         garantizadas para
                         durar años</p>
-                    <a href="" class="my-3 button-a">Empecemos!!!</a>
+                    <div class="hover">
+                        <a href="" class="my-3 button-a ">Empecemos!!!</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -558,14 +567,14 @@
         </div>
     </section>
     <section class="contactanos py-5" data-aos="fade-down">
-        <div class="container">
+        <div class="container ">
             <div class="row justify-content-center align-items-center g-2">
                 <div class="col-sm-6">
                     <h5>¿Tiene preguntas adiconales?</h5>
                     <p>Póngase en contacto con nosotros aquí y estaremos encantados de ayudarte</p>
                 </div>
-                <div class="col-sm-6 text-center">
-                    <a href="">Contáctanos</a>
+                <div class="col-sm-6 text-center hover">
+                    <a class="hover">Contáctanos</a>
                 </div>
             </div>
         </div>
@@ -702,7 +711,9 @@
     $(document).ready(function () {
         $('.slider').slick({
             prevArrow: '<button type="button" class="priv-arrow"><i class="fa-solid fa-angle-left"></i></button>',
-            nextArrow: '<button type="button" class="priv-next"><i class="fa-solid fa-angle-right"></i></button>'
+            nextArrow: '<button type="button" class="priv-next"><i class="fa-solid fa-angle-right"></i></button>',
+            autoplay: true,
+            autoplaySpeed: 3000,
         });
     });
 </script>
