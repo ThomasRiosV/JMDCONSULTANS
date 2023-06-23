@@ -56,11 +56,25 @@
         color: white;
         text-decoration: none;
         font-weight: 900;
-        max-width: 222.743px;
+        max-width: 400.743px;
+        min-width: 200px;
         max-height: 54.4488px;
         min-height: 54.4488px;
         font-size: 18px;
         box-shadow: 0px 0px 28px 0px rgb(0, 183, 161);
+        margin-right: 28px;
+    }
+
+    .button_color1:hover {
+        color: white;
+        transform: scale(1.1);
+        transition: ease-in 0.5s;
+    }
+
+    .button_color2:hover {
+        color: white;
+        transform: scale(1.1);
+        transition: ease-in 0.5s;
     }
 
     .button_color2 {
@@ -228,8 +242,10 @@
         font-weight: 500;
         font-size: 15px;
         padding: 10px 35px;
-        box-shadow: 0px 17px 31px -5px rgba(0, 0, 0, 0.9);
+        box-shadow: 0px 17px 31px -5px rgb(151 151 151 / 90%);
+        position: 100;
     }
+
     .button-a:hover {
         color: white;
         transform: scale(1.1);
@@ -293,7 +309,12 @@
         font-weight: 500;
         font-size: 2rem;
         padding: 10px 6.5rem;
-        box-shadow: 0px 17px 31px -5px rgba(0, 0, 0, 0.9);
+        box-shadow: 0px 17px 31px -5px rgb(151 151 151 / 90%);
+    }
+
+    .contactanos a:hover{
+        transform: scale(1.1)!important;
+        transition: ease-in 0.5s;
     }
 
     .image-container {
@@ -368,6 +389,7 @@
 
     .w-200 {
         width: 200px;
+        font-size: 13px;
     }
 </style>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -375,25 +397,27 @@
 
 <body>
     <header>
-        <section class="container" >
-            <nav class="navbar row justify-content-between align-items-center pt-3" >
-                <a data-aos="fade-down" class="col-sm-6" href="#"><img src="img/logo-jmd-roofing.png" class="d-inline-block align-top" alt=""
-                        height="66px "></a>
-                <a data-aos="fade-down" name="" id="" class="button_color1 row justify-content-center align-items-center" href="#"
-                    role="button">
-                    <i class="bi bi-telephone-fill col-sm-2 m-0 p-0"></i>
-                    <p class="col mb-2 p-0">+1 3225 1586 632</p>
-                </a>
+        <section class="container">
+            <nav class="navbar row justify-content-between align-items-center pt-3">
+                <a data-aos="fade-down" class="col-sm-6" href="#"><img src="img/logo-jmd-roofing.png"
+                        class="d-inline-block align-top" alt="" height="66px "></a>
+                <div class="col-sm-6 px-5 d-flex justify-content-end">
+                    <a data-aos="fade-down" name="" id=""
+                        class="button_color1 row justify-content-center align-items-center" href="#" role="button">
+                        <i class="bi bi-telephone-fill col-sm-2 m-0 p-0"></i>
+                        <p class="col-sm-10 mb-2 p-0">+1 3225 1586 632</p>
+                    </a>
+                </div>
             </nav>
             <div class="row justify-content-between align-items-center g-2">
                 <div class="col-sm-6 text-white" data-aos="fade-down">
                     <h1>Especialistas en roofing</h1>
-                    <h3>Inspeccion 100% gratuita</h3>
+                    <h3>Inspección 100% gratuita</h3>
                     <h5>Te ayudamos a <strong>recuperar el dinero</strong> que necesitas de tu <strong>compañia de
                             seguros</strong></h5>
                 </div>
                 <div class="col-sm-6 p-4">
-                    <form  data-aos="fade-down" action=""
+                    <form data-aos="fade-down" action=""
                         class="mx-5 pt-3 pb-4 px-4 row justify-content-center align-items-center text-center">
                         <div class="form-group mt-4 mb-2  d-inline-block">
                             <label for="">
@@ -426,10 +450,10 @@
             </div>
         </section>
     </header>
-    <main class="container my-5" >
-        <div class="slider mt-5 px-5"data-aos="fade-down" >
-            <div class="container my-5"  >
-                <div class="slider_items row justify-content-center" >
+    <main class="container my-5">
+        <div class="slider mt-5 px-5" data-aos="fade-down">
+            <div class="container my-5">
+                <div class="slider_items row justify-content-center">
                     <div class="col-sm-6 d-flex justify-content-center p-0"><img src="img/hombre-roofing.jpg" alt=""
                             class="img-fluid border-0"></div>
                     <div class="col-sm-6">
@@ -442,7 +466,7 @@
                 </div>
             </div>
 
-            <div class="container mt-5 mb-5" >
+            <div class="container mt-5 mb-5">
                 <div class="slider_items row justify-content-between">
                     <div class="col-sm-6 d-flex justify-content-center p-0"><img src="img/hombre-roofing.jpg" alt=""
                             class="img-fluid border-0"></div>
@@ -470,7 +494,7 @@
                     <div class="line m-auto"></div>
                 </div>
                 <div class="col-sm-4 cont text-center px-5 mb-5">
-                    <img  src="img/icon-3-roofing-jmd.jpg" class="img-fluid" width="130px" alt="">
+                    <img src="img/icon-3-roofing-jmd.jpg" class="img-fluid" width="130px" alt="">
                     <p class="text-center">Soluciones integrales a cualquier tipo de problemas</p>
                     <div class="line  m-auto"></div>
                 </div>
@@ -500,7 +524,7 @@
                 <p>Realizamos todo el proceso administrativo con tu seguro</p>
             </div>
         </div>
-        <div class="row justify-content-center align-items-center g-2" >
+        <div class="row justify-content-center align-items-center g-2">
             <div class="col-sm-6 d-flex justify-content-center"><img src="img/hombre.jpg" class="img-fluid" alt="">
             </div>
             <div class="col-sm-6">
@@ -585,8 +609,8 @@
         </div>
     </section>
 
-    <footer >
-        <section class="container relative" >
+    <footer>
+        <section class="container relative">
             <div class="row justify-content-center align-items-center g-2">
                 <div class="col">
                     <div class="row justify-content-center text-center mt-3">
@@ -630,7 +654,7 @@
                             <i class="fa-solid fa-clock"></i>
                         </div>
                         <div class="row mt-4 p-0">
-                            <h4>Nuestra oficina</h4>
+                            <h4>Horario de atención</h4>
                         </div>
                         <div class="row justify-content-center ">
                             <div class="line_white"></div>
@@ -653,8 +677,8 @@
             </div>
             <div class="row justify-content-center align-items-center text-center p-0 m-0"
                 style="background-color: white;color: #969696;">
-                <div class="col-sm-6 p-0 m-0">Todos los derechos reservador por JMD CONSULTANTS</div>
-                <div class="col-sm-6 p-0 m-0">Desarrollo web realizado por cracknear.com</div>
+                <div class="col-sm-6 p-0 m-0 my-3">Todos los derechos reservador por JMD CONSULTANTS</div>
+                <div class="col-sm-6 p-0 m-0 my-3">Desarrollo web realizado por cracknear.com</div>
             </div>
 
         </section>
@@ -673,7 +697,7 @@
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
     AOS.init();
-  </script>
+</script>
 <script>
     $(document).ready(function () {
         $('.slider').slick({
