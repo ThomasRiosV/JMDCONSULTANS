@@ -585,6 +585,35 @@
 <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
 <body>
+    <script>
+        // Generar contenido antes de que se cargue la página
+        document.addEventListener('DOMContentLoaded', function () {
+            var dynamicContent = '<div class="loader-cont p-0 m-0">\
+            <div class="loading-container">\
+              <div class="loading-text">\
+                <span>L</span>\
+                <span>O</span>\
+                <span>A</span>\
+                <span>D</span>\
+                <span>I</span>\
+                <span>N</span>\
+                <span>G</span>\
+              </div>\
+            </div>\
+          </div>';
+            document.body.insertAdjacentHTML('afterbegin', dynamicContent);
+        });
+
+        // Eliminar contenido después de que la página haya cargado completamente
+        window.onload = function () {
+            var dynamicElement = document.querySelector('.loader-cont'); // Selector del elemento generado
+            if (dynamicElement) {
+                var scrollPosition = window.pageYOffset || document.documentElement.scrollTop; // Obtener la posición actual del scroll
+                dynamicElement.style.height = '0'; // Cambiar la altura a 0
+                window.scrollTo(0, scrollPosition); // Reiniciar el scroll a la posición anterior
+            }
+        };
+    </script>
 
     <header class="m-0 p-0">
         <section class="container m-auto px-4">
